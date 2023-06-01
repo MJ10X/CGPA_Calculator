@@ -17,6 +17,7 @@ const grade_point_dict = {
 };
 
 const App = () => {
+  document.title = "CGPA Calculator"; 
   const [termEntries, setTermEntries] = useState(JSON.parse(localStorage.getItem('entries')) || []);
   const [cgpa, setCgpa] = useState(parseFloat(localStorage.getItem('cgpa')) || 4.0);
   const [creditHours, setCreditHours] = useState(parseInt(localStorage.getItem('creditHours')) || 0);
